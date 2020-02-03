@@ -1,0 +1,25 @@
+<p>heroes works!</p>
+{{hero1.name}} VS {{hero2.name}}
+
+the winner will hero {{hero1.id}}
+
+<div>
+  <tr>
+    <td>
+      <h2>{{hero1.name || uppercase}} Details </h2>
+      <div><span>id: </span>{{hero1.id}}</div>
+      <div><span>name: </span>{{hero1.name}}</div>
+    <td>
+    <td>
+      <h2>{{hero2.name || uppercase}} Details </h2>
+      <div><span>id: </span>{{hero2.id}}</div>
+      <div><span>name: </span>{{hero2.name}}</div>
+    <td>
+  </tr>
+</div>
+
+<div>
+  <label>name:
+    <input [(ngModel)]="hero1.name" placeholder="name"/>
+  </label>
+</div>
